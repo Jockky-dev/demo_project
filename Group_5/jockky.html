@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jockky</title>
+    <link rel="stylesheet" href="/Group_5/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet"> 
+</head>
+
+<body class = "html text-center">
+    <header id="c-global-header" role="banner">
+        <a href="index.html">
+            <p style="color:gray;">HOME</p>
+        </a>
+
+
+        <nav id="global-header-nav" class="c-global-header__nav" role="navigation">
+
+
+            <ul>
+                
+
+
+
+                <li>
+                    <a role="menuitem" data-menu-button-text="" aria-label="Subscription Pricing"
+                        href="/Group_5/ctf/ctf3.html"><strong>CTF</strong></a>
+                </li>
+
+                <li>
+                    <details id="learn-menu-details">
+
+                        <details-menu role="menu">
+                            <ul class="o-dropdown-menu o-dropdown-menu--accessible c-dropdown-menu--expanded"
+                                role="menu">
+                                <li class="c-dropdown-menu__upper">
+                                    <ul>
+                                        <li class="c-dropdown-menu__established c-dropdown-menu__established--no-hover">
+                                            <div >
+                                                <span class="o-dropdown-menu__title">
+                                                    <p>ໃນ Page ນີ້ຈະນຳສະເໜີກ່ຽວກັບພາສາ Dart
+                                                        ເຊິ່ງເບື້ອງຕົ້ນຈະປະກອບໄປດ້ວຍຄວາມໝາຍຂອງMethod Main, Variable,
+                                                        Data Type,...
+                                                    </p>
+                                                </span>
+                                            </div>
+
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        </details-menu>
+                    </details>
+
+                </li>
+
+                <li class="l-community-care-link">
+                    <a role="menuitem" data-menu-button-text="" aria-label="Chat Me"
+                        href="https://www.facebook.com/jockky.chanthavong">Facebook</a>
+                </li>
+
+                <li class="l-community-care-link">
+                    <a role="menuitem" data-menu-button-text="" aria-label="Chat Me"
+                        href="https://github.com/Jockky-dev">Github</a>
+                </li>
+
+                <li class="l-community-care-link">
+                    <a role="menuitem" data-menu-button-text="" aria-label="Chat Me"
+                        href="https://discord.gg/ayrqRyhh">Discord</a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+
+
+
+    </header>
+    <div class="l-min-height-100" id="start-of-content" role="main">
+        <!---->
+
+        <div class="l-admin" data-sidebar-name="article-toc">
+
+
+            <div>
+
+                <head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                        body {
+                            font-family: "Lato", sans-serif;
+                            transition: background-color .5s;
+                        }
+
+                        .sidenav {
+                            height: 100%;
+                            width: 0;
+                            position: fixed;
+                            z-index: 1;
+                            top: 0;
+                            left: 0;
+                            background-color: #111;
+                            overflow-x: hidden;
+                            transition: 0.5s;
+                            padding-top: 60px;
+                        }
+
+                        .sidenav a {
+                            padding: 8px 8px 8px 32px;
+                            text-decoration: none;
+                            font-size: 25px;
+                            color: #818181;
+                            display: block;
+                            transition: 0.3s;
+                        }
+
+                        .sidenav a:hover {
+                            color: #f1f1f1;
+                        }
+
+                        .sidenav .closebtn {
+                            position: absolute;
+                            top: 0;
+                            right: 25px;
+                            font-size: 36px;
+                            margin-left: 50px;
+                            margin-top: 50px;
+                        }
+
+                        #main {
+                            transition: margin-left .5s;
+                            padding: 16px;
+                        }
+
+                        @media screen and (max-height: 450px) {
+                            .sidenav {
+                                padding-top: 15px;
+                            }
+
+                            .sidenav a {
+                                font-size: 18px;
+                            }
+                        }
+                    </style>
+                </head>
+
+                <body>
+
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <br>
+                        <br>
+                        
+                        <a style="font-size:20px" href="#1">Introduction of Dart Language</a>
+                        <a style="font-size:20px" href="#2">Method Main</a>
+                        <a style="font-size:20px" href="#3">ການສະແດງຜົນຂໍ້ມູນ</a>
+                        <a style="font-size:20px" href="#4">ການຂຽນຄຳອະທິບາຍ (Comment)</a>
+                        <a style="font-size:20px" href="#5">ໂຕແປ(Variable) ແລະ ຊະນິດຂໍ້ມູນ(Data Type)</a>
+                        <a style="font-size:20px" href="#6">ຮູບແບບໂຕແປໃນພາສາ Dart</a>
+                        <a style="font-size:20px" href="#7">ການນິຍາມໂຕແປ Static Type</a>
+                        <a style="font-size:20px" href="#8">ການນິຍາມໂຕແປ Dynamic Type</a>
+                        <a style="font-size:20px" href="#9">ການນິຍາມຄ່າຄົງທີ Constant</a>
+                        <a style="font-size:20px" href="#10">ການນິຍາມຄ່າຄົງທີ Final</a>
+                        <a style="font-size:20px" href="#11">ກົດການຕັ້ງຊື່ໂຕແປ</a>
+                        <a style="font-size:20px" href="#12">ໂຕດຳເນີນການ (Operator)</a>
+                        <a style="font-size:20px" href="#13">ໂຕດຳເນີນການທາງຄະນິດສາດ</a>
+                        <a style="font-size:20px" href="#14">ໂຕດຳເນີນການປຽບທຽບແບບ boolean</a>
+                        <a style="font-size:20px" href="#15">ໂຕດຳເນີນການເພີ່ມຄ່າ-ລົດຄ່າ</a>
+                        <a style="font-size:20px" href="#16">Compound Assignment</a>
+                        <a style="font-size:20px" href="#17">ໂຄງສ້າງຄວບຄູມ (Control Structure)</a>
+                        <a style="font-size:20px" href="#18">ແບບມີເງື່ອນໄຂ (Condition)</a>
+                        <a style="font-size:20px" href="#19">ຮູບແບບຄຳສັ່ງແບບເງື່ອນໄຂດຽວ</a>
+                        <a style="font-size:20px" href="#20">ຮູບແບບຄຳສັ່ງແບບ 2 ເງື່ອນໄຂ</a>
+                        <a style="font-size:20px" href="#21">ຮູບແບບຄຳສັ່ງແບບຫຼາຍເງື່ອນໄຂ</a>
+                        <a style="font-size:20px" href="#22">ໂຕດຳເນີນການທາງຕັກກະສາດ</a>
+                        <a style="font-size:20px" href="#23">ແບບທຳຊ້ຳ(Loop)</a>
+                        <a style="font-size:20px" href="#24">ຄຳສັ່ງ While</a>
+                        <a style="font-size:20px" href="#25">ຄຳສັ່ງ For</a>
+                        <a style="font-size:20px" href="#26">Do..While</a>
+                        <a style="font-size:20px" href="#27">ຄຳສັ່ງທີ່ກ່ຽວຂ້ອງກັບ Loop</a>
+                        <a style="font-size:20px" href="#28">ຂໍ້ແຕກຕ່າງ ແລະ ການໃຊ້ງານ Loop</a>
+                        <a style="font-size:20px" href="#29">ຟັ່ງຊັ່ນ (Function)</a>
+                        <a style="font-size:20px" href="#30">ຮູບແບບຂອງ Function</a>
+                        <a style="font-size:20px" href="#31">ຂອບເຂດໂຕແປ</a>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+
+                    <div id="main">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    </div>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("mySidenav").style.width = "250px";
+                            document.getElementById("main").style.marginLeft = "250px";
+                            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("mySidenav").style.width = "0";
+                            document.getElementById("main").style.marginLeft = "0";
+                            document.body.style.backgroundColor = "white";
+                        }
+                    </script>
+
+                </body>
+            </div>
+
+            <div>
+
+                <article class="c-written-tutorial l-block l-block--688 l-relative">
+                    <h1 id="1">Introduction of Dart Language</h1>
+                    <p>&#9656;ເປັນພາສາໂປຣແກຣມທີ່ພັດທະນາໂດຍ Google</p>
+                    <p>&#9656;ໂຄງສ້າງຂອງພາສາຄ້າຍຄື Java, C, C++</p>
+                    <p>&#9656;ມີຄວາມສາມາດດ້ານ OOP ຄື Class ແລະ Inheritance ໃຫ້ໃຊ້ງານ</p>
+                    <p>Dart ເປັນພາສາກຸ່ມ Compiler ນັ້ນຄືຈຳເປັນຕ້ອງມີ Compiler ກ່ອນ ເຖິງຈະນຳໂປຣແກຣມໄປ Run ໄດ້</p>
+                    <br>
+                    <img src="photo/08.20.20-What-is-Dart-and-how-is-it-used-1024x576.jpg" width="600" height="350">
+                    <br>
+                    <h2 id="2">Method Main</h2>
+                    <p>ເປັນ Method ທີ່ເປັນຈຸດເລີ່ມຕົ້ນຂອງການເຮັດວຽກຂອງ Code ເຮົາເປັນອັນດັບຕົ້ນ
+                    <p>
+                        <br><br>
+                    <div
+                        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                        <pre style="margin: 0; line-height: 125%"><span style="color: #333399; font-weight: bold">void</span> main() {
+<span style="color: #888888">//ຄຳສັ່ງຕ່າງໆ</span>
+}
+</pre>
+                    </div>
+                    <br>
+                    <h2 style="font-family:noto sans lao" id="3">ການສະແດງຜົນຂໍ້ມູນ</h2>
+                    <br>
+                    <p>
+                    <div
+                        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                        <pre style="margin: 0; line-height: 125%"><span style="color: #333399; font-weight: bold">void</span> main() {
+                        <p>&nbsp;&nbsp;&nbsp;print(<span style="background-color: #fff0f0">&quot;ຂໍ້ຄວາມທີ່ຕ້ອງການສະແດງຜົນ&quot;</span>);
+                        <p>}
+                        </pre>
+                    </div>
+                    <br>
+
+                    <h2 style="font-family:noto sans lao" id="4">ການຂຽນຄຳອະທິບາຍ (Comment)</h2>
+                    <p><strong>ວິທີທີ່ 1</strong> ໂດຍໃຊ້ເຄື່ອງໝາຍ Slash (/) ໃຊ້ໃນການອະທິບາຍຄຳສັ່ງສັ້ນໆໃນແຖວດຽວ
+                    <p><strong>ວິທີທີ່ 2</strong> ຂຽນຄຳອະທິບາຍໄວ້ໃນເຄື່ອງໝາຍ /* ... */ ໃຊ້ໃນການອະທິບາຍຄຳສັ່ງຍາວໆຫຼາຍແຖວ
+                        <br>
+                        <br>
+                    <h2 style="font-family:noto sans lao" id="5">ໂຕແປ(Variable) ແລະ ຊະນິດຂໍ້ມູນ(Data Type)</h2>
+
+                    <p>ໂຕແປ ຫຼື Variable ຄືຊື່ທີ່ຖືກນິຍາມຂຶ້ນມາເພື່ອໃຊ້ເກັບຄ່າຂໍ້ມູນສຳຫຼັບນຳໄປໃຊ້ງານໃນໂປຣແກຣມ
+                        ໂດຍຂໍ້ມູນອາດຈະປະກອບໄປດ້ວຍຂໍ້ຄວາມ ຕົວເລກ ຕົວອັກສອນ ຫຼື ຜົນລັບຈາກການປະມວນຜົນຂໍ້ມູນ
+                    <p>&nbsp;&#9900; ຊະນິດຂໍ້ມູນ:
+                    <p>&nbsp; 1. boolean: ແມ່ນຄ່າທາງຕັກກະສາດເຊັ່ນ: True/False
+
+                    <p>&nbsp; 2. num:
+                    <p>&nbsp; - ແມ່ນຕົວເລກທີ່ບໍ່ມີຈຸດທົດສະນິຍົມ(int) ເຊັ່ນ: 10, 20, 30
+                    <p>&nbsp; - ແມ່ນຕົວເລກຈຸດທົດສະນິຍົມ(double) ເຊັ່ນ: 30,15
+                    <p>&nbsp; 3. string: ຂໍ້ຄວາມ ເຊັ່ນ: Vilaysone
+                    <p>&nbsp; 4. List: ແມ່ນໂຄງສ້າງຂໍ້ມູນ ເຊັ່ນ: ["First", "Second", Third]
+                    <p>&nbsp; 5. Dynamic: ແມ່ນໂຕແປທີ່ປ່ຽນຄ່າໄດ້ ເຊັ່ນ: 20, 30, 15, True, "jockky"
+                        <br>
+                        <br>
+                    <h2 style="font-family:noto sans lao" id = "6">ຮູບແບບໂຕແປໃນພາສາ Dart</h2>
+                    <p>&#9656;ໂຕແປແບບ Dynamic Typing
+                        ຄືຊະນິດໂຕແປຈະເປັນຫຍັງກໍ່ໄດ້ຕາມຄ່າທີ່ໂຕມັນເກັບໂດຍບໍ່ຕ້ອງປະກາດຊະນິດຂໍ້ມູນ
+                    <p>&#9656;ໂຕແປແບບ Static Typing ຕ້ອງປະກາດຊະນິດຂໍ້ມູນໃນຕອນເລີ່ມຕົ່ນເຊັ່ນ: int, double...
+                        ເພື່ອບອກຊະນິດຂໍ້ມູນ
+                        <br>
+                        <br>
+                    <h2 style="font-family:noto sans lao" id = "7">ການນິຍາມໂຕແປ Static Type</h2>
+                    <p>ຊະນິດຂໍ້ມູນ ຊື່ໂຕແປ;
+                    <p>ຊະນິດຂໍ້ມູນ ຊື່ໂຕແປ = ຄ່າເລີ່ມຕົ້ນ;
+                    <p><strong>ແບບຫຼາຍໂຕແປໃນແຖວດຽວ</strong>
+                    <p>ຊະນິດຂໍ້ມູນ ຊື່ໂຕແປ = ຄ່າເລີ່ມຕົ້ນ, ຊະນິດຂໍ້ມູນ = ຄ່າເລີ່ມຕົ້ນ
+                    <p><u>ຖ້າບໍ່ໄດ້ກຳໜົດຄ່າ ຈະມີຄ່າເປັນ null ໂດຍອັດຕະໂນມັດ</u>
+                        <br>
+                        <br>
+                    <h2 style="font-family:noto sans lao" id = "8">ການນິຍາມໂຕແປ Dynamic Type</h2>
+                    <p>var ຊື່ໂຕແປ;
+                    <p>var ຊື່ໂຕແປ = ຄ່າເລີ່ມຕົ້ນ;
+                    <p>var ຊື່ໂຕແປ = ຄ່າເລີ່ມຕົ້ນ, ຊື່ໂຕແປ = ຄ່າເລີ່ມຕົ້ນ
+                        <br>
+                        <br>
+                    <h2 style="font-family:noto sans lao" id = "9">ການນິຍາມຄ່າຄົງທີ Constant</h2>
+                    <p>const ຊະນິດຂໍ້ມູນ ຊື່ໂຕແປ;
+                    <p>const ຊະນິດຂໍ້ມູນ ຊື່ໂຕແປ = ຄ່າເລີ່ມຕົ້ນ;
+                        <br>
+                        <br>
+                    <h2 style="font-family:noto sans lao" id = "10">ການນິຍາມຄ່າຄົງທີ Final</h2>
+                    <p>final ຊະນິດຂໍ້ມູນ ຊື່ໂຕແປ;
+                    <p>final ຊະນິດຂໍ້ມູນ ຊື່ໂຕແປ = ຄ່າເລີ່ມຕົ້ນ;
+                    <h2 style="font-family:noto sans lao" id = "11">ກົດການຕັ້ງຊື່ໂຕແປ</h2>
+                    <p>&#9656;ປະກອບດ້ວຍໂຕເລກ ຕົວອັກສອນ ເຄື່ອງໝາຍ
+                    <p>&#9656;ອັກສອນໂຕທຳອິດຫ້າມຂຶ້ນຕົ້ນດ້ວຍໂຕເລກ ແລະ ອັກສອນພິເສດ ຍົກເວັນ _ (underscore) ແລະ $
+                    <p>&#9656;ຫ້າມຊ້ຳກັບຄຳສະຫງວນ (keyword)
+                    <p>&#9656;Case Sensitve
+                    <h2 style="font-family:noto sans lao" id = "12">ໂຕດຳເນີນການ (Operator)</h2>
+                    <p> 1. ໂຕດຳເນີນການ (Operator)
+                    <p> 2. ໂຕຖືກດຳເນີນການ (Operand)
+                    <h2 style="font-family:noto sans lao" id = "13">ໂຕດຳເນີນການທາງຄະນິດສາດ</h2>
+                    <p>&#9656; + ໝາຍຄວາມວ່າ ບວກ
+                    <p>&#9656; - ໝາຍຄວາມວ່າ ລົບ
+                    <p>&#9656; * ໝາຍຄວາມວ່າ ຄູນ
+                    <p>&#9656; / ໝາຍຄວາມວ່າ ຫານ
+                    <p>&#9656; % ໝາຍຄວາມວ່າ ຫານເອົາເສດ
+                    <h2 style="font-family:noto sans lao" id = "14">ໂຕດຳເນີນການປຽບທຽບແບບ boolean</h2>
+                    <p>&#9656; == ໝາຍຄວາມວ່າ ເທົ່າກັບ
+                    <p>&#9656; != ໝາຍຄວາມວ່າ ບໍ່ເທົ່າກັບ
+                    <p>&#9656; > ໝາຍຄວາມວ່າ ຫຼາຍກວ່າ
+                    <p>&#9656; < ໝາຍຄວາມວ່າ ນ້ອຍກວ່າ <p>&#9656;>= ໝາຍຄວາມວ່າ ຫຼາຍກວ່າເທົ່າກັບ
+                            <p>&#9656;<= ໝາຍຄວາມວ່າ ນ້ອຍກວ່າເທົ່າກັບ 
+                                <h2 style="font-family:noto sans lao" id = "15">>ໂຕດຳເນີນການເພີ່ມຄ່າ-ລົດຄ່າ</h2>
+                                    <p>&#9656;++ (Prefix) ໂຕຢ່າງ: ++a ໝາຍຄວາມວ່າ ເພີ່ມຄ່າໃຫ້ a ກ່ອນ 1 ຄ່າແລ້ວນຳໄປໃຊ້
+                                    <p>&#9656;++ (Postfix) ໂຕຢ່າງ: a++ ໝາຍຄວາມວ່າ ນຳຄ່າປັດຈູບັນໃນ a
+                                        ໄປໃຊ້ກ່ອນແລ້ວຄ່ອຍເພີ່ມຄ່າ
+                                    <p>&#9656;-- (Prefix) ໂຕຢ່າງ: --b ໝາຍຄວາມວ່າ ລົດຄ່າໃຫ້ b ກ່ອນ 1 ຄ່າແລ້ວນຳໄປໃຊ້
+                                    <p>&#9656;-- (Postfix) ໂຕຢ່າງ: b-- ໝາຍຄວາມວ່າ ນຳຄ່າປັດຈູບັນໃນ b
+                                        ໄປໃຊ້ກ່ອນແລ້ວຄ່ອຍລົດຄ່າ
+                                        <br>
+                                        <br>
+                                    <h2 style="font-family:noto sans lao" id = "16">Compound Assignment</h2>
+                                    <p>&#9656;+= ໂຕຢ່າງ: x+=y ໝາຍຄວາມວ່າ x=x+y
+                                    <p>&#9656;-= ໂຕຢ່າງ: x-=y ໝາຍຄວາມວ່າ x=x-y
+                                    <p>&#9656;*= ໂຕຢ່າງ: x*=y ໝາຍຄວາມວ່າ x=x*y
+                                    <p>&#9656;/= ໂຕຢ່າງ: x~/=y ໝາຍຄວາມວ່າ x=x~/y
+                                    <p>&#9656;%= ໂຕຢ່າງ: x%=y ໝາຍຄວາມວ່າ x=x%y
+                                        <br>
+                                        <br>
+                                    <h2 style="font-family:noto sans lao" id = 17>ໂຄງສ້າງຄວບຄູມ (Control Structure)</h2>
+                                    <p>ແມ່ນກູ່ມຄຳສັ່ງທີ່ໃຊ້ຄວບຄຸມການເຮັດວຽກຂອງໂປຣແກຣມ
+                                    <p>&#x2022; ແບບລຳດັບ (Sequence)
+                                    <p>&#x2022; ແບບມີເງື່ອນໄຂ (Condition)
+                                    <p>&#x2022; ແບບທຳຊ້ຳ (Loop)
+                                        <br>
+                                        <br>
+                                    <h2 style="font-family:noto sans lao" id = "18">ແບບມີເງື່ອນໄຂ (Condition)</h2>
+                                    <p>ກຸ່ມຄຳສັ່ງທີ່ໃຊ້ຕັດສິນໃຈການເລືອກເງື່ອນໄຂຕ່າງໆ ພາຍໃນໂປຣແກຣມມາເຮັດວຽກ
+                                    <p>&#x2022; if
+                                    <p>&#x2022; Switch..Case
+                                        <br>
+                                        <br>
+                                    <h2 style="font-family:noto sans lao" id = "19">ຮູບແບບຄຳສັ່ງແບບເງື່ອນໄຂດຽວ</h2>
+                                    <p>&#x2022; if statement
+                                    <p>ເປັນຄຳສັ່ງທີ່ໃຊ້ກຳໜົດເງື່ອນໄຂໃນການຕັດສິນໃຈເຮັດວຽກ
+                                        ການໂປຣແກຣມຖ້າເງື່ອນໄຂເປັນຈິງຈະເຮັດຕາມຄຳສັ່ງຕ່າງໆ ທີ່ກຳໜົດພາຍໃນເງື່ອນໄຂນັ້ນໆ
+                                        <br>
+                                        <br>
+                                    <div
+                                        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                        <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">if</span>(<span style="color: #FF0000; background-color: #FFAAAA">ເງື່ອນໄຂ</span>) {
+   <span style="color: #FF0000; background-color: #FFAAAA">ຄຳສັ່ງເມື່ອເງື່ອນໄຂເປັນຈິງ</span>;
+}
+</pre>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2 style="font-family:noto sans lao" id = "20">ຮູບແບບຄຳສັ່ງແບບ 2 ເງື່ອນໄຂ</h2>
+                                    <br>
+                                    <br>
+                                    <div
+                                        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                        <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">if</span>(<span style="color: #FF0000; background-color: #FFAAAA">ເງື່ອນໄຂ</span>) {
+   <span style="color: #FF0000; background-color: #FFAAAA">ຄຳສັ່ງເມື່ອເງື່ອນໄຂເປັນຈິງ</span>;
+}<span style="color: #008800; font-weight: bold">else</span>{
+   <span style="color: #FF0000; background-color: #FFAAAA">ຄຳສັ່ງເມື່ອເງື່ອນໄຂບໍ່ເປັນຈິງ</span>;
+}
+</pre>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2 style="font-family:noto sans lao" id = "21">ຮູບແບບຄຳສັ່ງແບບຫຼາຍເງື່ອນໄຂ</h2>
+                                    <br>
+                                    <br>
+                                    <div
+                                        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                        <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">if</span>(<span style="color: #FF0000; background-color: #FFAAAA">ເງື່ອນໄຂທີ່</span> <span style="color: #6600EE; font-weight: bold">1</span>) {
+   <span style="color: #FF0000; background-color: #FFAAAA">ຄຳສັ່ງເມື່ອເງື່ອນໄຂທີ່</span> <span style="color: #6600EE; font-weight: bold">1</span> <span style="color: #FF0000; background-color: #FFAAAA">ເປັນຈິງ</span>;
+}<span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span>(<span style="color: #FF0000; background-color: #FFAAAA">ເງື່ອນໄຂທີ່</span> <span style="color: #6600EE; font-weight: bold">2</span>){
+   <span style="color: #FF0000; background-color: #FFAAAA">ຄຳສັ່ງເມື່ອເງື່ອນໄຂທີ່</span> <span style="color: #6600EE; font-weight: bold">2</span> <span style="color: #FF0000; background-color: #FFAAAA">ເປັນຈິງ</span>;
+}<span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span>(<span style="color: #FF0000; background-color: #FFAAAA">ເງື່ອນໄຂທີ່</span> <span style="color: #6600EE; font-weight: bold">3</span>){
+   <span style="color: #FF0000; background-color: #FFAAAA">ຄຳສັ່ງເມື່ອເງື່ອນໄຂທີ່</span> <span style="color: #6600EE; font-weight: bold">3</span> <span style="color: #FF0000; background-color: #FFAAAA">ເປັນຈິງ</span>;
+}<span style="color: #008800; font-weight: bold">else</span>{
+   <span style="color: #FF0000; background-color: #FFAAAA">ຄຳສັ່ງເມື່ອທຸກເງື່ອນໄຂບໍ່ເປັນຈິງ</span>;
+}
+</pre>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2 style="font-family:noto sans lao" id = "22">ໂຕດຳເນີນການທາງຕັກກະສາດ</h2>
+                                    <p>&#9656;&& ໝາຍຄວາມວ່າ AND
+                                    <p>&#9656;|| ໝາຍຄວາມວ່າ OR
+                                    <p>&#9656;! ຄວາມໝາຍວ່າ NOT
+                                        <br>
+                                        <br>
+                                    <h2 style="font-family:noto sans lao" id = "23">ແບບທຳຊ້ຳ(Loop)</h2>
+                                    <p>ກຸ່ມຄຳສັ່ງທີ່ໃຊ້ໃນການວົນຮອບ (Loop)
+                                        ໂປຣແກຣມຈະເຮັດວຽກໄປເລື້ອຍໆຈົນກວ່າເງື່ອນໄຂທີ່ກຳໜົດໄວ້ບໍ່ເປັນຈິງຈຶ່ງຢູດເຮັດວຽກ
+                                    <p>&#x2022; While
+                                    <p>&#x2022; For
+                                    <p>&#x2022; Do..While
+                                        <br>
+                                        <br>
+                                    <h2 style="font-family:noto sans lao" id = "24">ຄຳສັ່ງ While</h2>
+                                    <p>&#x2022; While Loop
+                                    <p>ຈຳທຳງານຕາມຄຳສັ່ງພາຍໃນ while ໄປເລື້ອຍໆເມື່ອເງື່ອນໄຂທີ່ກຳໜົດເປັນຈິງ
+                                        <!-- HTML generated using hilite.me -->
+                                    <div
+                                        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                        <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">while</span>(<span style="color: #FF0000; background-color: #FFAAAA">ເງື່ອນໄຂ</span>){
+  <span style="color: #FF0000; background-color: #FFAAAA">ຄຳສັ່ງທີ່ຈະເຮັດຊ້ຳເມື່ອເງື່ອນໄຂເປັນຈິງ</span>;
+}
+</pre>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2 style="font-family:noto sans lao" id = "25">ຄຳສັ່ງ For</h2>
+                                    <p>&#x2022; For Loop
+                                    <p>ເປັນຮູບແບບທີ່ໃຊ້ໃນການກວດສອບເງື່ອນໄຂ ມີການນຳໜົດຄ່າເລື່ມຕົ້ນ ແລະ ປ່ຽນຄ່າໄປພ້ອມໆກັນ
+                                        ເມື່ອເງື່ອນໄຂໃນຄຳສັ່ງ for ເປັນຈິງກໍຈະເຮັດວຽກຕາມຄຳສັ່ງທີ່ສະແດງໄວ້ພາຍໃນຄຳສັ່ງ for
+                                        ໄປເລື້ອຍໆ
+                                    <p><Strong> ໂຄງສ້າງຄຳສັ່ງ</Strong>
+                                    <p>for(ຄ່າເລີ່ມຕົ້ນຂອງໂຕແປ;ເງື່ອນໄຂ;ປ່ຽນແປງຄ່າໂຕແປ) {<br>
+                                        ຄຳສັ່ງເມື່ອເງື່ອນໄຂເປັນຈິງ;<br>
+                                        }
+                                        <br>
+                                        <br>
+
+                                    <div
+                                        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                        <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">for</span>(<span style="color: #008800; font-weight: bold">var</span> i <span style="color: #333333">=</span> <span style="color: #6600EE; font-weight: bold">1</span>;i<span style="color: #333333">&lt;=</span><span style="color: #6600EE; font-weight: bold">10</span>;i<span style="color: #333333">++</span>) {
+    <span style="color: #888888">//ຄຳສັ່ງເມື່ອເງື່ອນໄຂເປັນຈິງ;</span>
+}
+                                               </pre>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2 style="font-family:noto sans lao" id = "25">Do..While</h2>
+                                    <p>&#x2022; Do..While ແມ່ນຈະເຮັດວຽກຕາມຄຳສັ່ງຢ່າງນ້ອຍ 1 ຮອບ
+                                        ເມື່ອເຮັດວຽກແລ້ວຈະມາກວດສອບເງື່ອນໄຂຄຳສັ່ງ while
+                                        ຖ້າເງື່ອນໄຂເປັນຈິງຈະວົນກັບຂຶ້ນໄປເຮັດວຽກທີ່ຄຳສັ່ງໃຫມ່ອີກຮອບ
+                                        ແຕ່ຖ້າບໍ່ເປັນຕຈິງຈະຫຼຸດອອກຈາກ Loop
+
+                                        <br>
+                                        <br>
+                                    <h2 style="font-family:noto sans lao">ໂຄງສ້າງຄຳສັ່ງ</h2>
+                                    <br>
+
+                                    <p>
+                                    <div
+                                        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                        <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">do</span> {
+    <span style="color: #888888">//ຄຳສັ່ງຕ່າງໆເມື່ອເງື່ອນໄຂເປັນຈິງ;</span>
+} <span style="color: #008800; font-weight: bold">while</span>(<span style="color: #FF0000; background-color: #FFAAAA">ເງື່ອນໄຂ</span>);
+                                          </pre>
+                                    </div>
+
+                                    <br>
+                                    <br>
+                                    <h2 style="font-family:noto sans lao" id = "26">ຄຳສັ່ງທີ່ກ່ຽວຂ້ອງກັບ Loop</h2>
+                                    <p>&#x2022; <strong> break</strong> ຖ້າໂປຣແກຣມພົບຄຳສັ່ງນີ້ຈະຫຼຸດຈາກການເຮັດວຽກໃນ loop
+                                        ທັນທີເພື່ອໄປເຮັດຄຳສັ່ງອື່ນທີ່ຢູ່ນອກ loop
+                                    <p>&#x2022; <strong> continue</strong>
+                                        ຄຳສັ່ງນີ້ຈະເຮັດໃຫ້ຢຸດການເຮັດວຽກແລ້ວຍ້ອນກັບເລີ່ມຕົ້ນການເຮັດວຽກທີ່ຕົ້ນ loop ໃຫມ່
+                                        <br>
+                                    <h2 style="font-family:noto sans lao" id = "27">ຂໍ້ແຕກຕ່າງ ແລະ ການໃຊ້ງານ Loop</h2>
+                                    <br>
+                                    <p>&#x2022; For ໃຊ້ໃນກໍລະນີຮູ້ຈຳນວນຮອບທີ່ຊັດເຈນ
+                                    <p>&#x2022; While ໃຊ້ໃນກໍລະນີທີ່ໄມ່ຮູ້ຈຳນວນຮອບ
+                                    <p>&#x2022; Do..While ໃຊ້ໃນກໍລະນີທີ່ຢາກໃຫ້ລອງເຮັດວຽກກ່ອນ 1
+                                        ຮອບແລ້ວຈັ່ງເຮັດຊ້ຳໄປເລື້ອຍໆເທົ່າທີ່ເງື່ອນໄຂເປັນຈິງ
+
+                                        <br>
+                                        <br>
+                                    <h2 style="font-family:noto sans lao" id = "28">ຟັ່ງຊັ່ນ (Function)</h2>
+                                    <br>
+                                    <p> ໝາຍເຖິງຊຸດຄຳສັ່ງທີ່ນຳມາຂຽນລວມກັນຢູ່ເປັນກຸ່ມເພື່ອໃຫ້ເອີ້ນໃຊ້ງານຕາມວັດຖຸປະສົງທີ່ຕ້ອງການ
+                                        ແລະ ລົດຄວາມຊ້ຳຊ້ອນຂອງຄຳສັ່ງທີ່ໃຊ້ຕະຫຼອດ ຟັ່ງຊັ່ນສາມາດໄປໃຊ້ໄດ້ທຸກທີ່ ແລະ
+                                        ແກ້ໄຂໄດ້ໃນພາຍຫຼັງ ເຮັດໃຫ້ໂຄ້ດໃນໂປຣແກຣມມີລະບຽບ ແລະ ໃຊ້ງານໄດ້ສະດວກຫຼາຍຂຶ້ນ
+                                        <br>
+                                    <h2 style="font-family:noto sans lao" id = "29">ຮູບແບບຂອງ Function</h2>
+                                    <p>1. ຟັ່ງຊັ່ນທີ່ບໍ່ມີການຮັບ ແລະ ສົ່ງຄ່າ
+                                    <p>
+                                    <div
+                                        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                        <pre style="margin: 0; line-height: 125%"><span style="color: #333399; font-weight: bold">void</span> <span style="color: #FF0000; background-color: #FFAAAA">ຊື່ຟັ່ງຊັ່ນ</span>() {
+    <span style="color: #888888">//ຄຳສັ່ງຕ່າງໆ</span>
+}
+                                    </pre>
+                                    </div>
+                                    <br>
+                                    <p>&#9656;ເອີ້ນໃຊ້ Function
+                                        <br>
+                                        <br>
+                                        <!-- HTML generated using hilite.me -->
+                                    <div
+                                        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                        <pre style="margin: 0; line-height: 125%"><span style="color: #FF0000; background-color: #FFAAAA">ຊື່ຟັ່ງຊັ່ນ</span>();
+</pre>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2 style="font-family:noto sans lao" id = "30">ຂອບເຂດໂຕແປ</h2>
+                                    <p>&#x2022; <strong>local variable</strong> ໂຕແປທີ່ເຮັດວຽກຢູ່ໃນຟັ່ງຊັ່ນມີຂອບເຂດການເຮັດວຽກຕັ້ງແຕ່ຈຸດເລີ່ມຕົ້ນໄປຈົນຮອດຈຸດສິ້ນສຸດຂອງຟັ່ງຊັ່ນ
+                                        <p>&#x2022; <strong>global variable</strong> ໂຕແປທີ່ເຮັດວຽກຢູ່ນອກຟັ່ງຊັ່ນມີຂອບເຂດການເຮັດວຽກຕັ້ງແຕ່ຈຸດສິ້ນສຸດຂອງຟາຍທີ່ປະກາດໃຊ້
+                                    <br>
+                                    <br>
+
+
+                </article>
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
