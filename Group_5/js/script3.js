@@ -100,7 +100,7 @@ submitBtn.addEventListener('click', () => {
            quiz.innerHTML = `
            <h2 style="font-family:Noto Sans Lao">ເຈົ້າຕອບຖືກ ${score}/${quizData.length} ຂໍ້</h2>
 
-           <button onclick="location.href='/group_5/index.html'">BACK TO HOMEPAGE</button>
+           <button onclick="location.href='/index.html'">BACK TO HOMEPAGE</button>
            `
        }
     }

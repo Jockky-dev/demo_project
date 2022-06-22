@@ -1,35 +1,35 @@
 const quizData = [
     {
-        question: "ພາສາໃດ Run ຢູ່ເທິງ Web Browser",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "javascript",
-        correct: "d",
-    },
-    {
-        question: "What does CSS stand for?",
-        a: "Central Style Sheets",
-        b: "Cascading Style Sheets",
-        c: "Cascading Simple Sheets",
-        d: "Cars SUVs Sailboats",
-        correct: "b",
-    },
-    {
-        question: "What does HTML stand for?",
-        a: "Hypertext Markup Language",
-        b: "Hypertext Markdown Language",
-        c: "Hyperloop Machine Language",
-        d: "Helicopters Terminals Motorboats Lamborginis",
+        question: "ພາສາໃດ Python ຖືກພັດທະນາຂຶ້ນໂດຍໃຜ?",
+        a: "Guido van Rossum",
+        b: "Guido von Rossum",
+        c: "Guide van Rossum",
+        d: "Guide von Rossum",
         correct: "a",
     },
     {
-        question: "What year was JavaScript launched?",
-        a: "1996",
-        b: "1995",
-        c: "1994",
-        d: "none of the above",
-        correct: "b",
+        question: "ພາສາ Python ມີຄຸນລັກສະນະເປັນແນວໃດ?",
+        a: "Platform Independent",
+        b: "Native",
+        c: "Cross Platform",
+        d: "ຜິດໝົດ",
+        correct: "a",
+    },
+    {
+        question: "ພາສາ Python ມີຊື່ນາມສະກຸນວ່າແນວໃດ?",
+        a: ".html",
+        b: ".c",
+        c: ".py",
+        d: ".dart",
+        correct: "c",
+    },
+    {
+        question: "ພາສາ Python ສາມາດ Run ໄດ້ໃນ Platform ຫຍັງແດ່?",
+        a: "Windows",
+        b: "MacOS",
+        c: "Linux",
+        d: "ຖືກທູກຂໍ້",
+        correct: "d",
     },
 
 
@@ -91,9 +91,9 @@ submitBtn.addEventListener('click', () => {
            loadQuiz()
        } else {
            quiz.innerHTML = `
-           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+           <h2 style="font-family:Noto Sans Lao">ເຈົ້າຕອບຖືກ ${score}/${quizData.length} ຂໍ້</h2>
 
-           <button onclick="location.reload()">Reload</button>
+           <button onclick="location.href='/index.html'">BACK TO HOMEPAGE</button>
            `
        }
     }

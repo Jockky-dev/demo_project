@@ -1,35 +1,35 @@
 const quizData = [
     {
-        question: "ພາສາໃດ Run ຢູ່ເທິງ Web Browser",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "javascript",
-        correct: "d",
-    },
-    {
-        question: "What does CSS stand for?",
-        a: "Central Style Sheets",
-        b: "Cascading Style Sheets",
-        c: "Cascading Simple Sheets",
-        d: "Cars SUVs Sailboats",
-        correct: "b",
-    },
-    {
-        question: "What does HTML stand for?",
-        a: "Hypertext Markup Language",
-        b: "Hypertext Markdown Language",
-        c: "Hyperloop Machine Language",
-        d: "Helicopters Terminals Motorboats Lamborginis",
+        question: "ໃຜເປັນຄົນຄິດຄົ້ນພາສາ C?",
+        a: "Dennis Ritchie",
+        b: "Elon Musk",
+        c: "Mark Zuckerberg",
+        d: "Captain John",
         correct: "a",
     },
     {
-        question: "What year was JavaScript launched?",
-        a: "1996",
-        b: "1995",
-        c: "1994",
-        d: "none of the above",
+        question: "ພາສາ C ຖືກພັດທະນາມາຈາກພາສາຫຍັງ?",
+        a: "ພາສາ Python",
+        b: "ພາສາ C++",
+        c: "ພາສາ R",
+        d: "ພາສາ B",
+        correct: "d",
+    },
+    {
+        question: "ພາສາໃດໃຊ້ຫຼັກການພື້ນຖານຂອງພາສາ C?",
+        a: "Pyhon",
+        b: "Java",
+        c: "Dart",
+        d: "JavaScript",
         correct: "b",
+    },
+    {
+        question: "ພາສາ C ຖືກຄິດຄົ້ນຂຶ້ນປີໃດ? ",
+        a: "1970",
+        b: "1971",
+        c: "1972",
+        d: "1973",
+        correct: "c",
     },
 
 
@@ -91,9 +91,9 @@ submitBtn.addEventListener('click', () => {
            loadQuiz()
        } else {
            quiz.innerHTML = `
-           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+           <h2 style="font-family:Noto Sans Lao">ເຈົ້າຕອບຖືກ ${score}/${quizData.length} ຂໍ້</h2>
 
-           <button onclick="location.reload()">Reload</button>
+           <button onclick="location.href='/index.html'">BACK TO HOMEPAGE</button>
            `
        }
     }
