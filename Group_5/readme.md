@@ -13,4 +13,4 @@
 our project is on github!
 personal github: https://github.com/Jockky-dev
 
-project github: https://github.com/Jockky-dev/demo_project.git
+project on github: https://github.com/Jockky-dev/project_group_bcs4a.git
